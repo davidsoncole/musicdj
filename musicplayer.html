@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- taskbar -->
+    <meta name="theme-color" content="#db1d40" />
+
+    <link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574155025/dj%20lc/white-logo-fav.png"/>
+
+	<title>DJ-LC | world's famous</title>
+
+	<!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="css/AudioPlayer.css">
+
+</head>
+<body id="music">
+
+    <nav class="navbar navbar-dark transparent nav__content">
+        <div class="nav__logo--box">
+            <a href="index.html"><img class="nav__logo--image" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150008/dj%20lc/white-logo.png"></a>
+        </div>
+        <div class="closer">
+            <a href="details.html">ABOUT DJ LC</a>
+        </div>
+    </nav>
+
+    <div class="container-fuild player__content">
+        <div class="row">
+            <div class="col-lg-5 albumcover">
+                <div class="player__albumcover text-center">
+                    <img class="album__img" src="img/coverp.jpg">
+                </div>
+                <div class="mp_content">
+                    <!-- Audio player container-->
+                     <div id='player'></div>
+
+                    <!-- Audio player js begin-->
+                    <script src="js/AudioPlayer.js"></script>
+
+                    <script>
+                        // test image for web notifications
+                        var iconImage = null;
+
+                        AP.init({
+                            container:'#player',//a string containing one CSS selector
+                            volume   : 0.7,
+                            autoPlay : true,
+                            notification: false,
+                            playList: [
+                                {'icon': iconImage, 'title': 'Risky by Davido ft Popcaan', 'file': 'mp3/Davido-Ft-Popcaan-Risky.mp3'},
+                                {'icon': iconImage, 'title': 'Jealous by Fireboy', 'file': 'mp3/Fireboy-Jealous.mp3'},
+                                {'icon': iconImage, 'title': 'Joro by Wizkid', 'file': 'mp3/Wizkid-Joro.mp3'}
+                          ]
+                        });
+                    </script>
+                    <!-- Audio player js end-->
+                </div>
+
+            
+
+            </div>
+            <div class="col-lg-7 channel">
+                <h2 class="player__title">Choose your music service</h2>
+
+                <div class="row channel__row">
+                    <div class="col-md-6 col-lg-4 channel__box side__line base text-center sm_base">
+                        <img class="channel__img" src="img/channels/c1.png">
+                    </div>
+                    <div class="col-md-6 col-lg-4 channel__box side__line base text-center sm_base">
+                        <img class="channel__img" src="img/channels/c2.png">
+                    </div>
+                    <div class="col-md-6 col-lg-4 channel__box base text-center sm_base">
+                        <img class="channel__img" src="img/channels/c3.png">
+                    </div>
+                    <div class="col-md-6 col-lg-4 channel__box side__line text-center sm_base">
+                        <img class="channel__img" src="img/channels/c4.png">
+                    </div>
+                    <div class="col-md-6 col-lg-4 channel__box side__line text-center sm_base">
+                        <img class="channel__img" src="img/channels/c5.png">
+                    </div>
+                    <div class="col-md-6 col-lg-4 channel__box text-center">
+                        <img class="channel__img" src="img/channels/c6.png">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <footer class="bottom__content-mp text-center">
+        <p class="footer__text-mp">Designed by <a href="https://nimbbly.com/">Nimbbly Innovation</a></p>
+    </footer>
+
+
+<script>
+    
+</script>
+
+</body>
+</html>

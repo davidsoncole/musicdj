@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- taskbar -->
+    <meta name="theme-color" content="#232323" />
+
+	<title>DJ-LC | world's famous</title>
+
+	<link rel="shortcut icon" type="image/png" href="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574155025/dj%20lc/white-logo-fav.png"/>
+
+	<!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" type="text/css" href="css/main.css">
+    <link rel="stylesheet" type="text/css" href="css/loaders.css">
+
+</head>
+<body id="pageup" class="secpage">
+	
+	<header>
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="pos-f-t navbar__content">
+				  <div class="collapse navbar__collapsible" id="navbarToggleExternalContent">
+				    <div class="p-4 collapsible__content">
+				    	<span><a href="musicplayer.html"><ion-icon class="play__btn" name="play-circle"></ion-icon></a></span>
+				      <h5 class="text-white h4 navbar__heading">Explore mixed tape</h5>
+				      <span class="navbar__subheading">Queued tracks playlist</span>
+				    </div>
+				  </div>
+				  <nav class="navbar navbar-dark transparent nav__content">
+				  	<div class="nav__logo--box">
+				  		<a href="index.html"><img class="nav__logo--image" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150008/dj%20lc/white-logo.png"></a>
+				  	</div>
+				    <button class="navbar-toggler ml-auto nav__button" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+				      <span class="navbar-icon"><ion-icon class="nav__icon" name="apps"></ion-icon></span>
+				    </button>
+				  </nav>
+				</div>
+				
+			</div>
+		</div>
+	</header>
+
+	<aside class="sidenav__container d-none d-sm-none d-md-block">
+		<div class="nav flex-column nav-pills sidenav__pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+	      <a class="nav-link active sidenav__list" id="v-pills-profiles-tab" data-toggle="pill" href="#v-pills-profiles" role="tab" aria-controls="v-pills-profiles" aria-selected="true"><ion-icon class="sidenav__icon" name="contact"></ion-icon></a>
+
+	      <a class="nav-link sidenav__list" id="v-pills-gallery-tab" data-toggle="pill" href="#v-pills-gallery" role="tab" aria-controls="v-pills-gallery" aria-selected="false"><ion-icon class="sidenav__icon" name="images"></ion-icon></a>
+
+	      <a class="nav-link sidenav__list" id="v-pills-video-tab" data-toggle="pill" href="#v-pills-video" role="tab" aria-controls="v-pills-video" aria-selected="false"><ion-icon class="sidenav__icon" name="videocam"></ion-icon></a>
+
+	      <a class="nav-link sidenav__list" id="v-pills-book-tab" data-toggle="pill" href="#v-pills-book" role="tab" aria-controls="v-pills-book" aria-selected="false"><ion-icon class="sidenav__icon" name="logo-buffer"></ion-icon></a>
+	    </div>
+	</aside>
+
+	<div id="sidebar__mobile" class="slideleft d-block d-sm-block d-md-none">
+		<div  class="box__one">
+			<div class="box__two">
+				<button onclick="moveOut()" id="toggle-display" class="btn moveleft"><ion-icon name="close"></ion-icon></button>
+			</div>
+			<div id="v-pills-tab" role="tablist" aria-orientation="vertical" class="nav flex-column">
+				<a class="nav-link sidenav__list box__icon-1" id="v-pills-profiles-tab" data-toggle="pill" href="#v-pills-profiles" role="tab" aria-controls="v-pills-profiles" aria-selected="true"><ion-icon class="sidenav__icon" name="contact"></ion-icon></a>
+			
+				<a class="nav-link sidenav__list box__icon-2" id="v-pills-gallery-tab" data-toggle="pill" href="#v-pills-gallery" role="tab" aria-controls="v-pills-gallery" aria-selected="false"><ion-icon class="sidenav__icon" name="images"></ion-icon></a>
+			
+				<a class="nav-link sidenav__list box__icon-3" id="v-pills-video-tab" data-toggle="pill" href="#v-pills-video" role="tab" aria-controls="v-pills-video" aria-selected="false"><ion-icon class="sidenav__icon" name="videocam"></ion-icon></a>
+			
+				<a class="nav-link sidenav__list box__icon-4" id="v-pills-book-tab" data-toggle="pill" href="#v-pills-book" role="tab" aria-controls="v-pills-book" aria-selected="false"><ion-icon class="sidenav__icon" name="logo-buffer"></ion-icon></a>
+			</div>
+		</div>
+		
+	</div>
+
+	<button onclick="moveIn()" id="toggle-display" class="btn moveright d-block d-sm-block d-md-none"><ion-icon name="arrow-forward"></ion-icon></button>
+
+	
+
+
+	<section id="details">
+
+		<div class="container-fluid">
+			<div class="row">
+
+				<div class="col-sm-12 col-md-12 col-lg-9">
+
+					<div class="tab-content" id="v-pills-tabContent">
+					      <div class="tab-pane fade show active" id="v-pills-profiles" role="tabpanel" aria-labelledby="v-pills-profiles-tab">
+
+					      	<div class="row">
+					      		<div class="col-lg-12">
+					      			<h2 class="heading">A little about me</h2>
+					      			<p class="subheading">Hello am dj lc aka..World Famous, welcome to my website here is a brief write-up about me.</p>
+					      		</div>
+
+					      		<div class="col-md-12 col-lg-12 card__container">
+					      			<div class="load__profile">
+								        <div class="loader-inner ball-clip-rotate">
+								        	<div></div>
+								        </div><span class="tooltip">
+								        <p>ball-clip-rotate</p></span>
+								    </div>
+									<div class="card__img profile__img">
+									</div>
+								</div>
+								<div class="col-md-12 col-lg-12">
+									<article class="about__content text-white">
+										<h3 class="lead text-white about__title">ABOUT DJ LC</h3>
+										<div class="line"></div>
+										<p class="about__text">aka..World Famous dj lc is one of Lagos most sought-after female DJS; and has quickly established herself as one of the hottest in the industry. Playing in venues all around the East Coast, bringing a sound of haunting vocals mixed with heart-pounding beats and rhythms, as well as producing fresh events spotlighting women in hip hop and guesting at many premier music nights and venues. Also found behind the turntables at weddings, private engagements, and corporate events with residencies at several local venues, she can also be seen anchoring statewide events from Lagos to all over the world. She has provided the soundtrack for special events, changed the landscape and continues to shine; in addition to working with brands, Lc is well known in her home base of lagos, but has graced stages around the country and abroad, hitting colleges and festivals from coast to coast and fortifying her followers from all around the globe.</p>
+										<p class="about__text">Beyond Entertaining hundreds of djs, engagements annually, she has dedicated time to hosting dj workshops, at various local homeless shelters for women and youth,contributing dj lessons, her well known logo and merch line has also made a name for itself,allowing lc's fans to show support from anywhere and contribute to her philanthropic efforts by way of profits percentage donations.</p>
+										<p class="about__text">she is in the high demand,mixing hip hop,r&b,rap,trap,reggae,deep house and top 40,shes one of the vibe supplier for any music addict.</p>
+
+										<span class="slinks">
+											<a href=""><ion-icon class="slinks__icon" name="logo-facebook"></ion-icon></a>
+											<a href=""><ion-icon class="slinks__icon" name="logo-twitter"></ion-icon></a>
+											<a href="https://www.instagram.com/dj.lc/"><ion-icon class="slinks__icon" name="logo-instagram"></ion-icon></a>
+											<a href=""><ion-icon class="slinks__icon" name="logo-youtube"></ion-icon></a>
+										</span>
+									</article>
+								</div>
+					      		
+					      	</div>
+
+					      </div>
+
+					      <div class="tab-pane fade" id="v-pills-gallery" role="tabpanel" aria-labelledby="v-pills-gallery-tab">
+
+					      	<div class="row">
+					      		<div class="col-lg-12">
+					      			<h2 class="heading">Pictures from past events</h2>
+					      			<p class="subheading">Hi, here are pictures of past events from venues all around the East Coast.</p>
+
+					      			<div class="card-columns gallery__container">
+								  		<div class="card gallery__card img-fluid">
+										  	<div class="loader">
+										        <div class="loader-inner ball-clip-rotate">
+										          <div></div>
+										        </div><span class="tooltip">
+										        <p>ball-clip-rotate</p></span>
+										    </div>
+
+									    	<img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150015/dj%20lc/01.jpg" class="card-img-top card__img" alt="...">
+									  	</div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+
+									  	<img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150017/dj%20lc/02.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+									    <img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150020/dj%20lc/03.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+									  	<img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150023/dj%20lc/04.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+									    <img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150025/dj%20lc/05.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+									    <img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150028/dj%20lc/06.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+									    <img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150037/dj%20lc/07.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+									    <img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150030/dj%20lc/08.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+									    <img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150031/dj%20lc/09.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+									    <img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150032/dj%20lc/10.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+									    <img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150035/dj%20lc/11.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+									    <img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150038/dj%20lc/12.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									  <div class="card gallery__card img-fluid">
+									  	<div class="loader">
+									        <div class="loader-inner ball-clip-rotate">
+									        	<div></div>
+									        </div><span class="tooltip">
+									        <p>ball-clip-rotate</p></span>
+									    </div>
+									    <img src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150040/dj%20lc/13.jpg" class="card-img-top card__img" alt="...">
+									  </div>
+									</div>
+
+					      		</div>
+
+							</div>
+					      	
+					      </div>
+
+					      <div class="tab-pane fade" id="v-pills-video" role="tabpanel" aria-labelledby="v-pills-video-tab">
+
+							<div class="row">
+					      		<div class="col-lg-12">
+					      			<h2 class="heading">Videos from past events</h2>
+					      			<p class="subheading">Hi, here are videos of past events from venues all around the East Coast.</p>
+
+					      			<div class="card-columns row gallery__container">
+								  <div class="card gallery__card col-12 img-fluid">
+								  	<div class="loader">
+								        <div class="loader-inner ball-clip-rotate">
+								        	<div></div>
+								        </div><span class="tooltip">
+								        <p>ball-clip-rotate</p></span>
+								    </div>
+								    <iframe height="315" src="https://www.youtube.com/embed/n17hC9LdR5c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								  </div>
+								  <div class="card gallery__card col-12 img-fluid">
+								  	<div class="loader">
+								        <div class="loader-inner ball-clip-rotate">
+								        	<div></div>
+								        </div><span class="tooltip">
+								        <p>ball-clip-rotate</p></span>
+								    </div>
+								  	<iframe height="315" src="https://www.youtube.com/embed/0HcyWbnLK2c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								  </div>
+								  <div class="card gallery__card col-12 img-fluid">
+								  	<div class="loader">
+								        <div class="loader-inner ball-clip-rotate">
+								        	<div></div>
+								        </div><span class="tooltip">
+								        <p>ball-clip-rotate</p></span>
+								    </div>
+								    <iframe height="315" src="https://www.youtube.com/embed/_KH7_sqczh8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								  </div>
+								  <div class="card gallery__card col-12 img-fluid">
+								  	<div class="loader">
+								        <div class="loader-inner ball-clip-rotate">
+								        	<div></div>
+								        </div><span class="tooltip">
+								        <p>ball-clip-rotate</p></span>
+								    </div>
+								  	<iframe height="315" src="https://www.youtube.com/embed/FOisxawAzgE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								  </div>
+								  <div class="card gallery__card col-12 img-fluid">
+								  	<div class="loader">
+								        <div class="loader-inner ball-clip-rotate">
+								        	<div></div>
+								        </div><span class="tooltip">
+								        <p>ball-clip-rotate</p></span>
+								    </div>
+								    <iframe height="315" src="https://www.youtube.com/embed/_KH7_sqczh8" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								  </div>
+								  <div class="card gallery__card col-12 img-fluid">
+								  	<div class="loader">
+								        <div class="loader-inner ball-clip-rotate">
+								        	<div></div>
+								        </div><span class="tooltip">
+								        <p>ball-clip-rotate</p></span>
+								    </div>
+								    <iframe height="315" src="https://www.youtube.com/embed/N0z068ywZ4c" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+								  </div>
+			
+								</div>
+
+					      		</div>
+							</div>
+					      	
+					      </div>
+
+					      <div class="tab-pane fade" id="v-pills-book" role="tabpanel" aria-labelledby="v-pills-book-tab">
+
+					      	<div class="row">
+					      		<div class="col-lg-12">
+					      			<h2 class="heading">Book me for a spin!</h2>
+					      			<p class="subheading">For event booking, like weddings, private engagements, corporate events with residencies at several local venues, e.t.c.</p>
+					      		</div>
+					      		<div class="col-lg-12">
+					      			<h3 class="form__title text-white">What's the occation?</h3>
+
+					      			<div class="col-lg-9">
+
+						      			<form class="form__booking">
+							      			<div class="form__checks">
+
+							      				<div class="form__group">
+													<input class="form__checks-input" type="radio" id="radio" name="booking" value="Radio">
+													<label class="form__checks-label" for="radio">Radio</label>
+												</div>
+
+												<div class="form__group">
+													<input class="form__checks-input" type="radio" id="clubs" name="booking" value="Clubs">
+													<label class="form__checks-label" for="clubs">Clubs/Bars</label>
+												</div>
+
+												<div class="form__group">
+													<input class="form__checks-input" type="radio" id="festivals" name="booking" value="Festivals">
+													<label class="form__checks-label" for="festivals">Festivals</label>
+												</div>
+
+												<div class="form__group">
+													<input class="form__checks-input" type="radio" id="tour" name="booking" value="Clubs">
+													<label class="form__checks-label" for="tour">Tour DJ</label>
+												</div>
+
+												<div class="form__group">
+													<input class="form__checks-input" type="radio" id="battle" name="booking" value="Battle">
+													<label class="form__checks-label" for="battle">DJ Battle</label>
+												</div>
+
+												<div class="form__group">
+													<input class="form__checks-input" type="radio" id="weddings" name="booking" value="Weddings">
+													<label class="form__checks-label" for="weddings">Weddings</label>
+												</div>
+
+												<div class="form__group">
+													<input class="form__checks-input" type="radio" id="parties" name="booking" value="Parties">
+													<label class="form__checks-label" for="parties">Parties</label>
+												</div>
+
+											</div>
+
+											<h3 class="form__title--two text-white">Do you have more details?</h3>
+
+											<div class=" row form__text">
+
+												<div class="form-group col-lg-6">
+												    <label class="form__text-label" for="full-name">Full name</label>
+												    <input type="text" class="form__text-input form-control" id="full-name" placeholder="">
+												</div>
+
+												<div class="form-group col-lg-6">
+												    <label class="form__text-label" for="email">Email address</label>
+												    <input type="email" class="form__text-input form-control" id="email" placeholder="">
+												</div>
+
+												<div class="form-group col-lg-4">
+												    <label class="form__text-label" for="mobile-number">Mobile number</label>
+												    <input type="text" class="form__text-input form-control" id="mobile-number" placeholder="">
+												</div>
+
+												<div class="form-group col-lg-4">
+												    <label class="form__text-label" for="country">Country</label>
+												    <input type="text" class="form__text-input form-control" id="country" placeholder="">
+												</div>
+
+												<div class="form-group col-lg-4">
+												    <label class="form__text-label" for="city">City</label>
+												    <input type="text" class="form__text-input form-control" id="city" placeholder="">
+												</div>
+
+												<div class="form-group col-lg-12">
+												    <label class="form__text-label" for="discovery">How did you hear about me</label>
+												    <textarea class="form__textarea-input form-control" id="discovery" placeholder="" rows="3"></textarea>
+												</div>
+												
+											</div>
+
+											<button type="button" id="form-btn" class="btn">send</button>
+
+										</form>
+
+									</div>
+
+									<div class="col-lg-3"></div>
+					      			
+					      		</div>
+					      	</div>
+					      	
+					      </div>
+					</div>
+					
+				</div>
+
+				<div class="col-sm-12 col-md-12 col-lg-3 reviews__container">
+					
+					<div class="instagram">
+
+						<div class="card bg-dark">
+							<div class="container card-header">
+								<div class="row">
+									<div class="col-3">
+										<a href="https://www.instagram.com/dj.lc/"><img class="instagram__dp rounded-circle img-fluid" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574149888/dj%20lc/dp.jpg"></a>
+									</div>
+									<div class="instagram__text col-6">
+										<h6 class="instagram__heading"><a href="https://www.instagram.com/dj.lc/">dj.lc</a></h6>
+										<span class="instagram__subheading"><a href="https://www.instagram.com/dj.lc/">a.k.a World Famous DJ</a></span>
+									</div>
+									<div class="col-3">
+										<a href="https://www.instagram.com/dj.lc/" class="btn instagram__btn">FOLLOW</a>
+									</div>
+								</div>
+							</div>
+							<div class="container instagram__card-body card-body">
+								<div class="row">
+									<div class="instagram__box col-4">
+										<img class="instagram__img img-fluid" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150043/dj%20lc/01a.jpg">
+									</div>
+									<div class="instagram__box col-4">
+										<img class="instagram__img img-fluid" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150042/dj%20lc/02a.jpg">
+									</div>
+									<div class="instagram__box col-4">
+										<img class="instagram__img img-fluid" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150044/dj%20lc/03a.jpg">
+									</div>
+									<div class="instagram__box col-4">
+										<img class="instagram__img img-fluid" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150047/dj%20lc/04a.jpg">
+									</div>
+									<div class="instagram__box col-4">
+										<img class="instagram__img img-fluid" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150048/dj%20lc/05a.jpg">
+									</div>
+									<div class="instagram__box col-4">
+										<img class="instagram__img img-fluid" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574149888/dj%20lc/09a.jpg">
+									</div>
+								</div>
+							</div>
+							<div class="card-footer">
+								<div class="container-fluid">
+									<div class="row">
+										<div class="col-10">
+											<span><a href="https://www.instagram.com/dj.lc/"><ion-icon class="footer__icon" name="heart"></ion-icon></a></span>
+											<span><a href="https://www.instagram.com/dj.lc/"><ion-icon class="footer__icon" name="chatboxes"></ion-icon></a></span>
+											<span><a href="https://www.instagram.com/dj.lc/"><ion-icon class="footer__icon" name="share"></ion-icon></a></span>
+										</div>
+										<div class="col-2 text-right">
+											<a href="https://www.instagram.com/dj.lc/"><ion-icon class="footer__icon" name="bookmark"></ion-icon></a>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+
+					<div class="card text-white bg-dark">
+					  <div class="container card-header">
+					  	<div class="row">
+					  		<div class="review__img-dp col-2">
+					  			<img class="review__img rounded-circle" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150010/dj%20lc/comment-img1.jpg">
+					  		</div>
+					  		<div class="review__text col-10">
+					  			<span class="review__heading">ritachiii</span>
+					  			<p class="review__subheading text-muted">11 Apr 2019 - 2:14 PM</p>
+					  		</div>
+					  	</div>
+					  </div>
+					  <div class="card-body">
+					    <p class="card-text">Ok now I get why you've been refilling your glass the whole day <ion-icon name="happy"></ion-icon></p>
+					  </div>
+					</div>
+
+					<div class="card text-white bg-dark">
+					  <div class="container card-header">
+					  	<div class="row">
+					  		<div class="review__img-dp col-2">
+					  			<img class="review__img rounded-circle" src="https://res.cloudinary.com/duw1ccgzp/image/upload/v1574150011/dj%20lc/comment-img2.jpg">
+					  		</div>
+					  		<div class="review__text col-10">
+					  			<span class="review__heading">partylive_uae</span>
+					  			<p class="review__subheading text-muted">27 Jan 2019 - 2:14 PM</p>
+					  		</div>
+					  	</div>
+					  </div>
+					  <div class="card-body">
+					    <p class="card-text">Hey your page looks amazing! Check out our`s to be updated about all parties in UAE.</p>
+					  </div>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<div class="spacing"></div>
+
+	<footer class="bottom__content bottom__fixed text-center">
+		<p class="footer__text">Designed by <a href="https://nimbbly.com/">Nimbbly Innovation</a></p>
+	</footer>
+
+
+
+
+
+
+	
+
+	<!-- Bootstrap core JS -->
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+	<script src="loaders.css.js"></script>
+
+	<!-- Ionicons -->
+	<script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+	
+
+	<script>
+		// loaders
+		$(document).ready(function(){
+
+			$('.card__img, .profile__img').hide();
+
+			$(window).on({
+				load: function(){
+					setTimeout(function() {
+				        $(".card__img, .profile__img").show('fadeIn', {}, )
+				    }, );
+
+				    setTimeout(function() {
+				        $(".loader, .load__profile").hide('fadeOut', {}, )
+				    }, );
+
+				}
+			})
+		})
+
+		// mobile sidebar 
+		function moveIn() {
+		  var element = document.getElementById("sidebar__mobile");
+		  element.classList.remove("slideleft");
+		  element.classList.add("slideright");
+		}
+
+		function moveOut() {
+		  var element = document.getElementById("sidebar__mobile");
+		  element.classList.remove("slideright");
+		  element.classList.add("slideleft");
+		}
+
+		// form submit btn
+		$('#form-btn').click(function() {
+		  $('#form-btn').html('<span class="spinner-border spinner-border-sm mr-2" role="status" aria-hidden="true"></span>Loading...').addClass('disabled');
+		  setTimeout(function() {
+				        $("#form-btn").html('sent!')
+				    }, 6000);
+		});
+
+	</script>
+
+</body>
+</html>
